@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <!-- lexend font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- daisy  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        green: '#B4F461',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="bg-navBg">
+            <div class="navbar container mx-auto p-6 gap-3 justify-center items-center ">
+                <div class="navbar-start flex flex-col items-center lg:flex-row ">
+                    <a id="home-info" class="btn bg-green px-6 font-bold text-lg"> Home</a>
+                </div>
+                <div class="navbar-center flex flex-col items-center gap-3 lg:flex-row ">
+                    <img class="max-h-10 mr-2" src="./assets/logo.png" alt="">
+                    <h2 class="font-bold text-lg">Donate Bangladesh</h2>
+                </div>
+                <div class="navbar-end flex flex-col items-center lg:flex-row">
+                    <div class="flex items-center gap-2">
+                        <img class="max-h-10 mr-2" src="./assets/bangladeshi-taka.png" alt="">
+                        <p class="font-semibold text-lg">
+                            <span id="available-balance">5000</span>
+                            <span>BDT</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="px-3">
+        <div class="faq max-w-screen-xl mx-auto flex flex-col gap-5 my-5">
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is JavaScript?</div>
+                <div class="collapse-content">
+                    <p>JavaScript is a versatile programming language commonly used for adding interactive behavior to web pages. It enables dynamic content, control over media, and a variety of web-based applications.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you create variables in JavaScript?</div>
+                <div class="collapse-content">
+                    <p>Variables in JavaScript can be declared using <code>var</code>, <code>let</code>, or <code>const</code>. Each has different scoping rules:</p>
+                    <ul>
+                        <li><strong>var:</strong> Function-scoped variable.</li>
+                        <li><strong>let:</strong> Block-scoped variable.</li>
+                        <li><strong>const:</strong> Block-scoped constant value.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is an API, and how is it used?</div>
+                <div class="collapse-content">
+                    <p>An API (Application Programming Interface) is a set of rules and protocols that allows one software application to interact with another. APIs are commonly used to connect different software platforms, such as retrieving data from a server using REST APIs.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What are JavaScript promises?</div>
+                <div class="collapse-content">
+                    <p>A JavaScript promise represents the eventual completion (or failure) of an asynchronous operation. Promises are used to handle asynchronous tasks in a more manageable way compared to traditional callback functions.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/common.js"></script>
+</body>
+
+</html>
